@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    margin-left: 2rem;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    height: 70vh;
+    width: 90%;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content span {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5vh;
+    margin-left: 2rem;
+    padding-left: 0;
+}
+
+.dropdown-content span h2 {
+    margin-bottom: 2rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    animation: fadeIn 1s;
+}
+
+.subcontent {
+    width: 80%;
+    background-color: #E0E0E0;
+    padding-left: 3rem;
+    display: none;
+}
+
+.maincontent {
+    width: 25%;
+    font-size: 0.8rem;
+}
+
+.subsubcontent {
+    display: flex;
+}
+
+.subsubcontent {
+    width: 50%;
+    font-size: 0.9rem;
+}
+
+hr {
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 80%;
+}
+
+.display {
+    display: block;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+.clippath {
+    clip-path: polygon(86% 0, 100% 50%, 88% 100%, 0% 100%, 0 52%, 0% 0%);
+    background-color: #E0E0E0;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

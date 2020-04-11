@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="navbar">
+
+        <div class="dropdown">
+            <button class="dropbtn">Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content dropdowncontent">
+                <div class="maincontent">
+                    <span><h3><b> OUR PRODUCTS</b></h3></span>
+                    <span class="mens">Mens</span>
+                    <hr>
+                    <span class="women">Women</span>
+                    <hr>
+                    <span class="children">Children</span>
+                    <hr>
+                    <span class="groceries">Groceries</span>
+                    <hr>
+
+                    <span class="watches">Watches</span>
+                    <hr>
+
+                </div>
+
+
+                <div class="subcontent">
+                    <div class="heading">
+                        <h1>MENS</h1>
+                    </div>
+                    <p>
+                        <h5>
+                            India relies on its rich manufacturing heritage and aesthetic approach to bring innovative solutions and contemporary products to world in North America.
+                        </h5>
+                    </p>
+
+                    <div>
+                        <h3><b> OUR PRODUCTS</b></h3>
+                        <div class="subsubcontent">
+                            <div class="subsubcontent1">
+
+                                <span>Mens</span>
+
+                                <span>Women</span>
+
+                                <span>Children</span>
+
+                                <span>Groceries</span>
+
+
+                                <span>Watches</span>
+
+
+                            </div>
+
+
+                            <div class="subsubcontent1">
+                                <span>Mens</span>
+
+                                <span>Women</span>
+
+                                <span>Children</span>
+
+                                <span>Groceries</span>
+
+
+                                <span>Watches</span>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script>
+            const mens = document.querySelector(".mens");
+            const women = document.querySelector(".women");
+            const Children = document.querySelector(".children");
+            const groceries = document.querySelector(".groceries");
+            const watches = document.querySelector(".watches");
+            const subcontent = document.querySelector(".subcontent");
+
+
+
+
+            mens.addEventListener("mouseover", () => {
+                subcontent.classList.toggle("display");
+                mens.classList.add("clippath");
+
+            });
+            women.addEventListener("mouseover", () => {
+                subcontent.classList.toggle("display");
+                women.classList.add("clippath");
+            });
+            Children.addEventListener("mouseover", () => {
+                subcontent.classList.toggle("display");
+                Children.classList.add("clippath");
+            });
+            groceries.addEventListener("mouseover", () => {
+                subcontent.classList.toggle("display");
+                groceries.classList.add("clippath");
+            });
+            watches.addEventListener("mouseover", () => {
+                subcontent.classList.toggle("display");
+                watches.classList.add("clippath");
+            });
+
+
+            mens.addEventListener("mouseout", () => {
+                subcontent.classList.toggle("display");
+                mens.classList.remove("clippath");
+            });
+
+            women.addEventListener("mouseout", () => {
+                subcontent.classList.toggle("display");
+                women.classList.remove("clippath");
+            });
+            Children.addEventListener("mouseout", () => {
+                subcontent.classList.toggle("display");
+                Children.classList.remove("clippath");
+            });
+            groceries.addEventListener("mouseout", () => {
+                subcontent.classList.toggle("display");
+                groceries.classList.remove("clippath");
+            });
+            watches.addEventListener("mouseout", () => {
+                subcontent.classList.toggle("display");
+                watches.classList.remove("clippath");
+            });
+        </script>
+
+
+</body>
+
+</html>
